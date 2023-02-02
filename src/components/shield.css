@@ -1,0 +1,49 @@
+.shield{
+    width: 32rem;
+    height: 32rem;
+    background: #e8e6e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid #ad3332 3rem;
+    margin: 2rem auto 0 auto;
+}
+
+
+
+.shield__container{
+    background: #355675;
+    width: 20.5rem;
+    height: 20.5rem;
+    border-radius: 50%;
+    border: solid #ad3332 2rem;
+}
+
+
+.container__star,
+.container__star::before,
+.container__star::after{
+border-color: transparent transparent #fff transparent;
+border-width: 0 4rem 2.5rem 4rem;
+border-style: solid;
+position: absolute;
+transform: rotate(180deg);
+margin-top: 6.75rem;
+margin-left: 4.25rem;
+}
+
+
+.container__star::before{
+    content: '';
+    margin-top: -0.15rem;
+    margin-left: -4.3rem;
+    transform: rotate(70deg);
+}
+
+.container__star::after{
+    content: '';
+    margin-top: -0.29rem;
+    margin-left: -3.87rem;
+    transform: rotate(-70deg);
+}

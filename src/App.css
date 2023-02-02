@@ -1,5 +1,19 @@
+:root{
+  --fontFamily: 'Bebas Neue', cursive;
+  --bg:  #191d20;
+  --color:#e6e6e6
+}
+
+html{
+  cursor: url(./img/martillo.png),auto;
+}
+
+
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App-logo {
