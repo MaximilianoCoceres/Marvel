@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+.aboutLeft img{
+    transform: scale(1.5);
+}
+
 .aboutRight{
     display: flex;
     flex-direction: column;

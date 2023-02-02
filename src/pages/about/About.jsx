@@ -1,7 +1,7 @@
 import React from "react";
 import './about.css';
 import Shield from '../../components/Shield'
-import Escudo from "../../img/escudo-about.png";
+import Capi from "../../img/CAPITAN AMERICA.png";
 
 
 const About = () => {
@@ -9,7 +9,11 @@ const About = () => {
     <div className="row about gx-0 overflow-hidden">
       
    
-        <div className="  col-md-6">left</div>
+        <div className="col-md-6 aboutLeft d-flex align-items-center justify-content-center">
+          <figure className="">
+            <img src={Capi} alt="" />
+          </figure>
+        </div>
         <div className=" col-md-6 aboutRight"> 
        <div className="text p-4">
        <h1>Lorem ipsum</h1>

@@ -1,0 +1,27 @@
+.comics{
+    height: 100vh;
+    background: var(--bg);
+    padding: 2em;
+    
+}
+
+.card{
+    background: url(../../img/fondo-card.png) rgb(240, 240, 106);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid black;
+  border-color: black;
+  border-width: 3px 3px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+  transform: rotate(-2deg);
+
+}
+
+.card img{
+    padding: 1em;
+    transform: rotate(2deg);
+    border-width: 3px 3px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    
+}
