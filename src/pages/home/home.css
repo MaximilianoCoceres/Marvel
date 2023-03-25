@@ -1,12 +1,33 @@
-section {
- width: 100%;
+.menu__container{
   height: 100vh;
+}
+
+
+.header{
+  padding: .2em;
+  font-family: var(--fontFamily);
+  position: fixed;
+  z-index: 99;
+  background-color: #000;
+  width: 100%;
+  
+}
+
+.header h1{
+  font-size: 3em;
+  color:white;
+
+}
+
+nav {
+ width: 100%;
+ height: 100vh;
   display: flex;
   
   
 }
 
-section a {
+nav a {
   width: 0px;
   flex-grow: 1;
   display: block;
@@ -16,7 +37,7 @@ section a {
   position: relative;
 }
 
-section a::before {
+nav a::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -29,24 +50,24 @@ section a::before {
   );
 }
 
-section img {
+nav img {
   object-fit: cover;
   height: 100%;
   width: 100%;
   transition: 0.4s ease all;
 
 }
-section:hover img {
+nav:hover img {
   opacity: 0.8;
 
 }
 
-section a:hover {
+nav a:hover {
   cursor: url(../../img/martillogolpe.png),auto;
   width: 300px;
 }
 
-section a:hover img {
+nav a:hover img {
   transform: scale(1.1);
   filter: contrast(120%);
   opacity: 1;
@@ -54,7 +75,7 @@ section a:hover img {
 }
 
 
-section a span{
+nav a span{
     position: absolute;
     font-size: 80px;
     font-weight: bold;
@@ -72,7 +93,7 @@ transform:translate(-50%, -50%);
 }
 
 
-section a:hover span{
+nav a:hover span{
     transform:translate(-50%, -50%) scale(1.1);
 
 }
