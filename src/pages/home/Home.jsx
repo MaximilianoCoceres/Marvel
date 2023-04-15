@@ -5,7 +5,7 @@ import Menu from '../../components/Menu';
 
 const Home = () => {
     return (
-        <section>
+        <section id='home'>
             <Menu/>
             <Outlet></Outlet>
         </section>

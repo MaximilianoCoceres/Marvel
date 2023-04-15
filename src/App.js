@@ -1,5 +1,6 @@
 
 import './App.css';
+import Footer from './components/Footer';
 import About from './pages/about/About';
 import Comics from './pages/comics/Comics';
 import Contact from './pages/contact/Contact';
@@ -13,6 +14,7 @@ function App() {
     <About/>
     <Comics/>
     <Contact/>
+    <Footer/>
     </div>
   );
 }

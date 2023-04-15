@@ -30,7 +30,7 @@ const Menu = () => {
     <a href="tel:+34634624907"><FaPhoneAlt/></a>
     </div>
     </header>
-      <nav className={`${scrollY > 770 ? 'scrolled' : ''}`}>
+      <nav className={`${scrollY > 770 ? 'scrolled' : ''} navHome`} >
         <HashLink smooth to="/#about">
           <img src={Spiderman} alt="" />
           <span>ABOUT</span>{" "}
