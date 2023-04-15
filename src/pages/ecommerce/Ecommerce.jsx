@@ -35,7 +35,7 @@ const Ecommerce = () => {
                   title={user.title}
                   img={user.thumbnail.path + "." + user.thumbnail.extension}
                   price={
-                    user.prices[0].price == 0
+                    user.prices[0].price === 0
                       ? "agotado"
                       : "$" + user.prices[0].price
                   }
