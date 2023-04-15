@@ -1,13 +1,12 @@
 .card{
-    width: 20rem;
-    min-height: 35rem;
-    max-height: 35rem;
-
+    height: 100%;
+    box-shadow: 0 2px 5px white;
+    display: flex;
 }
 
 .card-img-top{
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 4/3;
     object-fit: cover;
 }
 
@@ -16,6 +15,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
+    
     
 }
 
@@ -31,4 +32,17 @@
 .botones{
     display: flex;
     gap: 1em;
+    
+}
+
+.btn{
+    font-family: var(--fontFamily);
+    background: none;
+    color: rgb(96,0,0);
+    border: none;
+   font-size: 1.5em;
+}
+
+.btn:hover{
+    background-color: rgb(96,0,0);
 }
