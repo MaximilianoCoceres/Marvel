@@ -166,12 +166,35 @@ transform:translate(-50%, -50%);
   }
   section a {
     width: 100%;
-    height: 0;
+    display: flex;
+    flex-direction: column;
+    max-height: 12em;
+  }
+
+  nav{
+    flex-direction: column;
+  }
+
+  .navHome a span{
+    font-size: 1.8em;
   }
 
   section a:hover {
     width: 100%;
     height: 50vh;
     cursor: url(../../img/martillogolpe.png);
+  }
+
+  .header{
+    display: none;
+  }
+
+  .navHome.scrolled{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navHome.scrolled a span{
+    font-size: 1em;
   }
 }

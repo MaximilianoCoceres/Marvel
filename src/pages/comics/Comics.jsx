@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./comics.css";
 import Avengers from "../../img/avengers.jpg";
 import Xmen from "../../img/xmen.jpg";
@@ -9,6 +9,9 @@ import Logo4fantastic from "../../img/Fantastic-Four-Logo.png";
 import CardComics from "../../components/cardComics";
 
 const Comics = () => {
+
+
+
   return (
     <div className="row comics g-0" id="comics">
       <div className="col-md-6 g-3">
@@ -17,7 +20,7 @@ const Comics = () => {
             link={"#"}
             imgComic={Avengers}
             imgTitle={LogoAvengers}
-            text="texto de avengers"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum incidunt voluptatibus saepe consequatur similique aut assumenda eligendi recusandae sint?"
           />
         </div>
 
@@ -26,7 +29,7 @@ const Comics = () => {
             link={"#"}
             imgComic={Xmen}
             imgTitle={LogoXmen}
-            text="texto de xmen"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum incidunt voluptatibus saepe consequatur similique aut assumenda eligendi recusandae sint?"
           />
         </div>
       </div>
@@ -36,7 +39,7 @@ const Comics = () => {
             link={"#"}
             imgComic={Fantastic}
             imgTitle={Logo4fantastic}
-            text="texto de 4fantastic"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum incidunt voluptatibus saepe consequatur similique aut assumenda eligendi recusandae sint?"
           />
         </div>
         <div className="card__container mb-3">
@@ -44,9 +47,10 @@ const Comics = () => {
             link={"#"}
             imgComic={Fantastic}
             imgTitle={Logo4fantastic}
-            text="texto de 4fantastic"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum incidunt voluptatibus saepe consequatur similique aut assumenda eligendi recusandae sint?"
           />
         </div>
+        
       </div>
     </div>
   );

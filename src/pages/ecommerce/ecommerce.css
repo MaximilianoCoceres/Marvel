@@ -9,3 +9,14 @@
     background: rgb(0, 0, 0);
 }
 
+@media screen and (max-width:768px) {
+    .ecommerce{
+        padding: 16em 1em;
+    }
+
+    .navEcommerce{
+        position: fixed;
+        top: 0;
+        padding: 4em 1em 1em 0;
+    }
+}
