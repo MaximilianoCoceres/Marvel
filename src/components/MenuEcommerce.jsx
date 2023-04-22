@@ -1,16 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./menuecommerce.css";
 import {FaShoppingCart} from "react-icons/fa";
+import {FiMenu} from 'react-icons/fi';
+import {IoMdCloseCircle} from 'react-icons/io';
 
 const MenuEcommerce = () => {
+
+  const [menuDesplegable, setMenuDesplegable] = useState(false)
+
+
+
+
   return (
     <div>
       <nav className="navEcommerce">
         <div className="title__header">
           <h1>COMICVERSE</h1>
+          <button className="btn btn-light" onClick={()=> setMenuDesplegable(!menuDesplegable)}>{menuDesplegable? <IoMdCloseCircle/> : <FiMenu/>}</button>
         </div>
-        <div>
+        <div className={` menu ${menuDesplegable? 'active' : '' } `}>
           <ul>
             <li>
               <Link to={"/#home"}>Home</Link>

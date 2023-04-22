@@ -6,7 +6,7 @@ import escudo from  '../../img/escudo-about.png'
 
 const About = () => {
   return (
-    <div className="row about gx-0 overflow-hidden" id="about">
+    <div className="row about gx-0 overflow-hidden" id="sectionabout">
       
    
         <div className="col-md-6 aboutLeft d-flex align-items-center justify-content-center">

@@ -13,7 +13,7 @@ const Comics = () => {
 
 
   return (
-    <div className="row comics g-0" id="comics">
+    <div className="row comics g-0" id="sectioncomics">
       <div className="col-md-6 g-3">
         <div className=" card__container mb-3">
           <CardComics
