@@ -78,12 +78,14 @@
     padding-bottom: 1em;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
     position: relative;
     z-index: 1;
   }
-
+  
+  .title__header button{
+    display: none;
+  }
   .btn{
     color: #fff;
     background: none;
@@ -119,5 +121,12 @@
     .navEcommerce ul ul {
       top: 0;
       left: 40%;
+    }
+    .title__header{
+      width: 100%;
+    }
+
+    .title__header button{
+      display: block;
     }
 }
