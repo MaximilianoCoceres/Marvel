@@ -17,7 +17,7 @@ const MenuEcommerce = () => {
             <nav className="navEcommerce">
                 <div className="title__header">
                     <h1>COMICVERSE</h1>
-                    <button className="btn btn-light" onClick={() => setMenuDesplegable(!menuDesplegable)}>{menuDesplegable ? <IoMdCloseCircle /> : <FiMenu />}</button>
+                    <button className="btn " onClick={() => setMenuDesplegable(!menuDesplegable)}>{menuDesplegable ? <IoMdCloseCircle /> : <FiMenu />}</button>
                 </div>
                 <div className={` menu ${menuDesplegable ? 'active' : ''} `}>
                     <ul>
