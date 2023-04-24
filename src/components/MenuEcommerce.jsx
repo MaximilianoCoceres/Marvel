@@ -1,22 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./menuecommerce.css";
-import {FaShoppingCart} from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 const MenuEcommerce = () => {
+
+  const [open, setOpen] = useState(false)
+
+
+  const handleMenuClick = () => {
+    setOpen(!open);
+  }
+
   return (
     <div>
-      <nav className="navEcommerce">
+      <div className="hamburger-menu">
+
+        <button className="hamburger-menu__button" onClick={handleMenuClick}>
+          <span className="hamburger-menu__button-line"></span>
+          <span className="hamburger-menu__button-line"></span>
+          <span className="hamburger-menu__button-line"></span>
+        </button>
+      </div>
+      <nav className={`hamburger-menu__nav ${open ? 'hamburger-menu__nav--open' : ''} navEcommerce`}>
         <div className="title__header">
           <h1>COMICVERSE</h1>
         </div>
         <div>
-          <ul>
-            <li>
-              <Link to={"/#home"}>Home</Link>
+          <ul className="hamburger-menu__list">
+            <li className="hamburger-menu__item">
+              <Link className="hamburger-menu__link" to={"/#home"}>Home</Link>
             </li>
-            <li>
-              <Link href="#">Categorías</Link>
+            <li className="hamburger-menu__item">
+              <Link className="hamburger-menu__link" href="#">Categorías</Link>
               <ul>
                 <li>
                   <Link href="#">Superhéroes</Link>
@@ -29,11 +45,11 @@ const MenuEcommerce = () => {
                 </li>
               </ul>
             </li>
-            <li>
-              <Link href="#">Ofertas</Link>
+            <li className="hamburger-menu__item">
+              <Link className="hamburger-menu__link" href="#">Ofertas</Link>
             </li>
-            <li>
-              <Link href="#">Mi Cuenta</Link>
+            <li className="hamburger-menu__item">
+              <Link className="hamburger-menu__link" href="#">Mi Cuenta</Link>
               <ul>
                 <li>
                   <Link href="#">Iniciar Sesión</Link>
@@ -43,12 +59,12 @@ const MenuEcommerce = () => {
                 </li>
               </ul>
             </li>
-            <li>
-              <Link href="#">Ayuda</Link>
+            <li className="hamburger-menu__item">
+              <Link className="hamburger-menu__link" href="#">Ayuda</Link>
             </li>
-            <li>
+            <li className="hamburger-menu__item">
 
-            <Link href="#"><FaShoppingCart></FaShoppingCart></Link>
+              <Link className="hamburger-menu__link" href="#"><FaShoppingCart></FaShoppingCart></Link>
             </li>
           </ul>
         </div>
