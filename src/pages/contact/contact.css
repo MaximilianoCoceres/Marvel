@@ -1,0 +1,63 @@
+#sectioncontact{
+    height: 60vh;
+    width: 100%;
+    background:var(--bg);
+    margin: 0;
+}
+
+#sectioncontact form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#sectioncontact form input,textarea{
+    width: 80%;
+    padding: .5em;
+    border: none;
+    box-shadow: 0px 2px 5px black;
+    outline: none;
+}
+#sectioncontact form label{
+    font-size: 1.2em;
+}
+
+#sectioncontact form{
+    font-family: var(--fontFamily);
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.btnForm{
+    color: rgb(96,0,0);
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    font-size: 1.1em;
+
+}
+
+@media screen and (max-width:768px) {
+    #sectioncontact{
+        height: 100vh;
+    }
+
+    #sectioncontact form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+}
