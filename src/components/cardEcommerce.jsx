@@ -11,10 +11,10 @@ const CardEcommerce = ({ img, title, description, price, pages }) => {
           <h5 className="card-title">{title} </h5>
           <p className="price">{price}</p>
           <div className="botones">
-            <a href=" " className="btn btn-primary">
+            <a href=" " className="btnCard ">
               <FaEye />
             </a>
-            <a href=" " className="btn btn-primary">
+            <a href=" " className="btnCard ">
               <FaCartPlus />
             </a>
           </div>

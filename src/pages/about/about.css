@@ -63,3 +63,31 @@
 }
 
 
+@media screen and (max-width:768px) {
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .container-img{
+        height: auto;
+        width: auto;
+    }
+
+    .aboutLeft img{
+        transform: scale(0.5);
+    }
+
+    .aboutRight{
+        flex-direction: row;
+    }
+
+    .escudo img{
+        width: 4em;
+    }
+    
+    .text h4{
+        width: 11em;
+    }
+}

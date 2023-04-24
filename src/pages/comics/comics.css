@@ -23,3 +23,18 @@
   
   
 }
+
+
+@media screen and (max-width:768px) {
+  
+  .row.comics{
+    flex-direction: column;
+    padding: 1em;
+    height: auto;
+  }
+
+  .card__container{
+    clip-path: none;
+    transform: none;
+  }
+}

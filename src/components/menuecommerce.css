@@ -46,7 +46,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0%;
     background-color:rgb(0, 0, 0);
     padding: 0;
     z-index: 99;
@@ -55,6 +55,7 @@
   .navEcommerce ul ul li {
     display: block;
     width: 200px;
+    background-color: cadetblue;
   }
   
   .navEcommerce ul ul li a {
@@ -70,107 +71,4 @@
   .navEcommerce ul li:hover > ul {
     display: inherit;
   }
-
-
-  /* menu hamburguesa */
-
-  .hamburger-menu {
-    display: flex;
-    align-items: center;
-    display: none;
-    background-color: #000;
-  }
   
-  .hamburger-menu__button {
-    background: #000;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    z-index: 99;
-  }
-  
-  .hamburger-menu__button-line {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-
-  
-  
-  .hamburger-menu__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .hamburger-menu__item {
-    margin-bottom: 10px;
-  }
-  
-  .hamburger-menu__link {
-    display: block;
-    padding: 10px;
-    color: #000;
-  }
-  
-
-  @media (max-width: 768px) {
-.hamburger-menu{
-  display: block;
-}
-
-.hamburger-menu__nav{
-  position: fixed;
-  top: 5%;
-  left: -100%;
-  right: 0;
-  padding: 20px;
-  height: 100vh;
-  background-color: #000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
-}
-
-.hamburger-menu__nav--open {
-  transform: translateX(0);
-}
-
-.navEcommerce{
-  justify-content: center;
-  flex-direction: column;
-  gap: 3em;
-}
-
-    .navEcommerce ul {
-      flex-direction: column;
-      display: flex;
-    }
-  
-    .navEcommerce ul ul{
-      top: 0;
-      left: 100%;
-    }
-    .navEcommerce ul li {
-      display: block;
-      margin-bottom: 10px;
-    }
-  
-    .navEcommerce ul li a {
-      padding: 10px 20px;
-    }
-  
-    .navEcommerce ul ul li {
-      width: 100%;
-    }
-
-    .navEcommerce .title__header h1{
-      font-size: 3em;
-    }
-  }
